@@ -16,10 +16,6 @@ header:hover {
 	transition: 1s;
 }
 
-header:hover {
-	padding: 100px;
-}
-
 
 
 
@@ -65,7 +61,7 @@ article {
 
 .text {
 	width: auto;
-	padding: 20px;
+	/* padding: 20px; */
 }
 
 img {
