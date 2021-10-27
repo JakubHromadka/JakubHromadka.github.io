@@ -17,7 +17,7 @@ let tileCountX;
 let tileCountY;
 let indentation;
 
-let fps = 2;
+let fps = 10;
 let gameIsRunning = true;
 
 //PLAYER
