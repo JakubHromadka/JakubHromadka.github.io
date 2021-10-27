@@ -1,0 +1,159 @@
+body {
+	background-color: #eee;
+}
+
+header {
+	position: fixed;
+	background-color: #999;
+	width: 120%;
+	margin: 4px -10%;
+	top: 0;
+	transition: 0.3s;
+}
+
+header:hover {
+	background-color: #555;
+	transition: 1s;
+}
+
+header:hover {
+	padding: 100px;
+}
+
+
+
+
+h1 {
+  text-align: center;
+  font-family: 'Adobe Devanagari';
+  font-size: 1em;
+  margin: -23px;
+  color: white;
+  }
+  
+b {
+	font-size: 250%;
+	color: rgb(225, 0, 0);
+}
+
+p {
+	font-size: 32px;
+	font-family: 'titillium web';
+	color: #333;
+}
+
+a,
+em {
+	color: rgb(225, 0, 0);
+	font-weight: 500;
+	font-style: normal;
+	font-style: unset;
+}
+
+a:hover {
+	color: pink;
+	transition: 1s;
+}
+
+
+article {
+	border: 10px solid white;
+	margin: 180px 10px 10px 10px ;
+	align-items: center;
+	border-radius: 50px;
+}
+
+.text {
+	width: auto;
+	padding: 20px;
+}
+
+img {
+	display: block;
+	width: 60%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 30px;
+	max-width: 1000px;
+	border: solid 10px white;
+	border-radius: 50px;
+}
+
+footer {
+	font-size: 15px;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+	color: #333;
+	margin: 20px 0;
+}
+ 
+.zoom {
+	transition: transform .2s;
+	margin: auto;
+}
+  
+.zoom:hover {
+	transform: scale(0.9);
+}
+
+
+
+
+table,
+th,
+td {
+	table-layout: fixed;
+	width: 100%;
+	border: 4px solid black;
+	border-collapse: collapse;
+	text-align: center;
+	padding: 5px 0;
+	margin:  30px auto 40px auto;
+	max-width: 1000px;
+
+	
+  }
+ 
+
+
+.fx { border-color: orange blue; }
+.gk { border-color: black red; }
+.ed { border-color: blue orange; }
+.tr { border-color: aqua; }
+.sa { border-color: brown blue; }
+.wk { border-color: purple blue; }
+.ch { border-color: red orange green blue; }
+.bk { border-color: navy blue teal aqua; }
+.op { border-color: red; }
+
+
+
+.gallery {
+	background-color: green;
+	color: white;
+	width: 200px;
+	padding: 25px 25px;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	margin:  auto;
+	display: block;
+	text-decoration: none;
+	/* border: solid 10px white; */
+	/* border-radius: 50px; */
+}
+	
+.gallery:hover,
+.gallery:active {
+	background-color: #ccc;
+	color: black;
+	transition: 0.4s;
+  }
+
+
+
+  ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+  }
