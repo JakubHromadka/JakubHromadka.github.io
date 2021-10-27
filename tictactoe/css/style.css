@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
  :root {
     --cell-size: 150px;
     --mark-size: calc(var(--cell-size) * .9);
