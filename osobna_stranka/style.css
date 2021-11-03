@@ -107,28 +107,20 @@ th,
 td {
 	table-layout: fixed;
 	width: 100%;
-	border: 4px solid black;
+	border: 10px solid purple;
 	border-collapse: collapse;
 	text-align: center;
 	padding: 5px 0;
 	margin:  30px auto 40px auto;
 	max-width: 1000px;
-
+	
 	
   }
- 
 
-
-.fx { border-color: orange blue; }
-.gk { border-color: black red; }
-.ed { border-color: blue orange; }
-.tr { border-color: aqua; }
-.sa { border-color: brown blue; }
-.wk { border-color: purple blue; }
-.ch { border-color: red orange green blue; }
-.bk { border-color: navy blue teal aqua; }
-.op { border-color: red; }
-
+table {
+	/* border-color: green; */
+	border: 15px dashed orange;
+}
 
 
 .gallery {
