@@ -8,7 +8,9 @@ header {
 	width: 120%;
 	margin: 4px -10%;
 	top: 0;
-	transition: 0.3s;
+	transition: 0.3
+	/*z-index: 1;*/
+
 }
 
 header:hover {
@@ -73,8 +75,12 @@ img {
 	max-width: 1000px;
 	border: solid 10px white;
 	border-radius: 50px;
+	transition: transform .2s;
 }
-
+img:hover{
+	transform: scale(0.9);
+	transition: transform .2s;
+}
 footer {
 	font-size: 15px;
 	font-family: Arial, Helvetica, sans-serif;
@@ -82,7 +88,7 @@ footer {
 	color: #333;
 	margin: 20px 0;
 }
- 
+ /*
 .zoom {
 	transition: transform .2s;
 	margin: auto;
@@ -90,8 +96,9 @@ footer {
   
 .zoom:hover {
 	transform: scale(0.9);
+	transition: transform .2s;
 }
-
+*/
 
 
 
