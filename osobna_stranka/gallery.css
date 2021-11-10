@@ -47,3 +47,18 @@
   .item {
     justify-content: flex-end;
   }
+
+
+  
+.gallery {
+	background-color: green;
+	color: white;
+	width: 200px;
+	padding: 25px 25px;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	margin:  auto;
+	display: block;
+	text-decoration: none;
+}
