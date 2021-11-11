@@ -8,14 +8,11 @@ header {
 	width: 120%;
 	margin: 4px -10%;
 	top: 0;
-	transition: 0.3
-	/*z-index: 1;*/
-
+	transition: 0.4s;
 }
 
 header:hover {
 	background-color: #555;
-	transition: 1s;
 }
 
 
@@ -126,7 +123,7 @@ table {
 .gallery {
 	background-color: green;
 	color: white;
-	width: 200px;
+	width: 250px;
 	padding: 25px 25px;
 	font-size: 30px;
 	font-weight: bold;
