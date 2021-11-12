@@ -9,10 +9,22 @@ header {
 	margin: 4px -10%;
 	top: 0;
 	transition: 0.4s;
+	/* max-width: 100%; */
 }
+
 
 header:hover {
 	background-color: #555;
+}
+
+#header	{
+	max-width: 80%;
+	margin: auto;
+	/* position: relative; */
+	transition: 0.4s;
+	/* margin-bottom: 10px; */
+
+	
 }
 
 
@@ -20,10 +32,12 @@ header:hover {
 
 h1 {
   text-align: center;
-  font-family: 'Adobe Devanagari';
+  font-family: 'Adobe Devanagari', serif;
   font-size: 1em;
   margin: -23px;
   color: white;
+  max-width: 100%;
+  /* max-inline-size: 100%; */
   }
   
 b {
@@ -63,6 +77,8 @@ article {
 img {
 	display: block;
 	width: 60%;
+	/* width: 25rem; */
+	/* width: 500px; */
 	margin-right: auto;
 	margin-left: auto;
 	margin-bottom: 30px;
@@ -100,13 +116,13 @@ table,
 th,
 td {
 	table-layout: fixed;
-	width: 100%;
+	width: 90%;
 	border: 10px solid purple;
 	border-collapse: collapse;
 	text-align: center;
 	padding: 5px 0;
 	margin:  30px auto 40px auto;
-	max-width: 1000px;
+	max-width: 900px;
 	
 	
   }
@@ -145,4 +161,14 @@ table {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
+  }
+
+
+
+
+  
+@media all and (max-width: 700px) {
+	img {
+		width: 80%;
+    }
   }
