@@ -98,17 +98,6 @@ footer {
 	color: #333;
 	margin: 20px 0;
 }
- /*
-.zoom {
-	transition: transform .2s;
-	margin: auto;
-}
-  
-.zoom:hover {
-	transform: scale(0.9);
-	transition: transform .2s;
-}
-*/
 
 
 
@@ -164,11 +153,3 @@ table {
   }
 
 
-
-
-  
-@media all and (max-width: 700px) {
-	img {
-		width: 80%;
-    }
-  }
