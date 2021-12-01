@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jakub</title>
     <link rel="stylesheet" href="mystyle/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montagu+Slab:wght@600&family=Roboto:wght@400&display=swap" rel="stylesheet">
 </head>
 <body>
         <header>
@@ -15,7 +18,7 @@
         </header>
 
 
-    <article>
+    <article id="article">
             <p>Chodím do <em>2.A</em> na <em><a href="https://ssosta.edupage.org" target="_blank"> Súkromnej strednej odbornej škole Tatranská akadémia</a></em>. Tento web som vytvoril na predmet <em>odborná prax</em>.</p> 
             <a class="bernardin" href="https://en.wikipedia.org/wiki/St._Bernard_(dog)" target="_blank">
                 <img src="https://fera.sk/images/companies/1/st-bernard-outdoor-3485788_1920.jpg?1598896323404" alt="obrázok bernardína">
@@ -45,15 +48,24 @@
 
 
       <script>
+          if (screen.width > 500) {
             document.getElementById("header").style.fontSize = "60px";
+            // document.getElementById("header").style.max-width == "50%";
+
 
             window.onscroll = function() {
             if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
                 document.getElementById("header").style.fontSize = "40px";
+
                 // document.getElementById("header"). = "80px";
             } else {
                 document.getElementById("header").style.fontSize = "60px";
             }};
+          }
+          else {
+            document.getElementById("header").style.fontSize = "40px";
+            document.getElementById("article").style.margin = "110px 10px 10px 10px";
+          }
 
       </script>
 

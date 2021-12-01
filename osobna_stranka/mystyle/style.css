@@ -8,7 +8,7 @@ header {
 	width: 120%;
 	margin: 4px -10%;
 	top: 0;
-	transition: 0.4s;
+	/* transition: 0.4s; */
 	/* max-width: 100%; */
 }
 
@@ -18,8 +18,8 @@ header:hover {
 }
 
 #header	{
-	max-width: 80%;
-	margin: auto;
+	/* max-width: 80%; */
+	/* margin: auto; */
 	/* position: relative; */
 	transition: 0.4s;
 	/* margin-bottom: 10px; */
@@ -34,9 +34,12 @@ h1 {
   text-align: center;
   font-family: 'Adobe Devanagari', serif;
   font-size: 1em;
-  margin: -23px;
+  margin: -23px 0;
   color: white;
-  max-width: 100%;
+  /* max-width: 100%; */
+  /* max-inline-size: 50%; */
+  /* max-zoom: 50%; */
+  /* max-height: 50%; */
   /* max-inline-size: 100%; */
   }
   
@@ -46,8 +49,9 @@ b {
 }
 
 p {
-	font-size: 32px;
-	font-family: 'titillium web';
+	
+	font-size: 2em;
+	font-family: 'Roboto', sans-serif;
 	color: #333;
 	padding: 0 30px;
 }
