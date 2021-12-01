@@ -32,9 +32,9 @@ header:hover {
 
 h1 {
   text-align: center;
-  font-family: 'Adobe Devanagari', serif;
-  font-size: 1em;
-  margin: -23px 0;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 0.8em;
+  margin: -5px 0 15px 0;
   color: white;
   /* max-width: 100%; */
   /* max-inline-size: 50%; */
