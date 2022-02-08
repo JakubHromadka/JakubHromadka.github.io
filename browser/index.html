@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <style>
+        body {
+            --color-2: #e8e8e8;
+        }
+        .ssosta:hover{
+            background-color: var(--color-2);
+        }
+        .gmail:hover{
+            text-decoration: underline;
+        }
+        .theme-switch {
+            /* position: absolute; */
+            /* left: 400px; */
+            /* left: 100px; */
+            top: -20px;
+        }
+        .settings-label {
+        position: absolute;
+        cursor: pointer;
+        display: block;
+        text-indent: -9999px;
+        height: 30px;
+        width: 60px;
+        border-radius: 50px;
+        background-color: #ccc;
+        transition: 0.5s ease background-color;
+        margin-right: 0;
+        /* margin-left: 200px; */
+        /* margin: 100px; */
+        }
+        .settings-label::after {
+        position: absolute;
+        content: "";
+        width: 20px;
+        height: 20px;
+        border-radius: 50px;
+        top: 50%;
+        left: 5px;
+        transform: translateY(-50%);
+        background-color: #444;
+        transition: 0.5s ease;
+        }
+
+        input:checked + label::after {
+        /* left: calc(100% - 2.5px); */
+        left: calc(100% - 25px);
+        /*background-color: #eee;*/
+        }
+        input:checked + label {
+        background-color: #777;
+        /* background-color: #23d5ab; */
+        /* border: 2px solid whitesmoke; */
+        /* }
+        .bg-white{
+            color: tomato !important;
+        } */
+    }
+
+.bg-dark {
+  --color: #fff !important;
+  --color-2: #333;
+
+  /* --color-2: #eee;
+  --color-3: rgb(39, 40, 42);
+  --color-4: rgb(186, 186, 202); */
+}
+
+    </style>
+
+</head>
+<body>
+   
+    <div id="try">
+        <div style="background:orange; width: 600px; height: 600px; position: absolute; top: -450px; left: -250px; border-radius: 50%;"></div>
+        <div style="color:orange ; position: absolute; top: 240px; left: 84px; transform: rotate(63deg); display: flex;">
+            <h3 ><---  Try dark mode</h3>
+            <button class="btn ms-2" style="background-color:orange; color: #fff" onclick="hide()">Hide</button>
+        </div>
+
+    </div>
+
+    <div class="mx-4" style="position: absolute; display: flex;">
+        <h5 style="color: var(--color)" class="my-4 mx-2">Dark mode</h5>
+
+        <div class="theme-switch">
+           <input type="checkbox" id="switcher" id="theme" onclick="themeToggle()" class="theme-switcher" style="visibility: hidden;">
+           <label for="switcher" class="settings-label">switch</label>
+        </div>
+     </div>
+
+
+<div class="d-flex justify-content-end m-1">
+    <div class="m-3 gmail" style="color: var(--color); cursor: pointer;">Gmail</div>
+    <div  class="m-3 gmail" style="color: var(--color); cursor: pointer;">Obrázky</div>
+    <div style="color: var(--color); cursor: pointer;" class="flex-column d-flex m-3">
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16" style="margin: -8.5px 0;">
+            <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16" style="margin: -8.5px 0;">
+            <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+          </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16" style="margin: -8.5px 0;">
+            <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+          </svg>
+    </div>
+
+      
+<span class="m-2" style="cursor: pointer; width: 38px; height: 38px; border-radius: 50%; background-color: green; align-items: center; color: #f4f4f4; padding: 3px 15px; font-size: 20px;">
+    <b>J</b>
+</span>
+
+</div>
+
+
+
+    <div class="position-absolute start-50 top-50 translate-middle">
+        <div class=" d-flex mx-auto my-4 justify-content-center">
+        <img class="col-5" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1280px-Google_2015_logo.svg.png" alt="">
+        </div>
+        <div class=" d-flex justify-content-center">
+           
+        <input placeholder="Vyhľadajte na Googli alebo zadajte webovú adresu" type="text" class="px-3 form-control" autofocus style="background-color: #f4f4f4; border-radius: 100px; max-width: 600px; height: 46px; box-shadow: none !important; border: gray !important; border-width: 2px; ">
+    </div>
+    <!-- <div style="height: 200px;"></div> -->
+<!-- div -->
+<div class="d-flex justify-content-center mt-5">
+
+    <div class="justify-content-center py-3 ssosta" style="border-radius: 8px; width: 120px;">
+        <div class="justify-content-center m-auto" style="width: 52px; height: 52px; padding: 12px; background-color: #f4f4f4; border-radius: 100px;">
+            <img style="width: 28px;" src="https://cloud9.edupage.org/cloud?z%3AtlaUhr2TtijB8Sn5izbC8LWWKfGlouJAWmCzjH6CyIU2Pc4tvFWiIzFkjqRdn3z6nKifgK5Y%2By8X%2Ba5vt%2BoheLbRGyyReolTtR4QZtg1zu0%3D" alt="">
+    </div>
+    <small style="color: var(--color); justify-content: center; display: flex; margin-top: 6px;">
+        Súkromná str...
+    </small>
+</div>
+
+<div class="justify-content-center py-3 ssosta" style="border-radius: 8px; width: 120px;">
+    <div class="justify-content-center m-auto" style="width: 52px; height: 52px; padding: 12px; background-color: #f4f4f4; border-radius: 100px;">
+        <img style="width: 28px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/2560px-YouTube_full-color_icon_%282017%29.svg.png" alt="">
+    </div>
+    <small style="color: var(--color); justify-content: center; display: flex; margin-top: 6px;">
+        Youtube 
+    </small>
+</div>
+
+<div class="justify-content-center py-3 ssosta" style="border-radius: 8px; width: 120px;">
+    <div class="justify-content-center m-auto" style="width: 52px; height: 52px; padding: 12px; background-color: #f4f4f4; border-radius: 100px;">
+        <img style="width: 28px;" src="data:image/png;base64,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" alt="">
+    </div>
+    <small style="color: var(--color); justify-content: center; display: flex; margin-top: 6px;">
+        Google
+    </small>
+</div>
+
+</div>
+
+
+<div class="d-flex justify-content-center">
+    
+    <div class="justify-content-center py-3 ssosta" style="border-radius: 8px; width: 120px;">
+        <div class="justify-content-center m-auto" style="width: 52px; height: 52px; padding: 12px; background-color: #f4f4f4; border-radius: 100px;">
+            <img style="width: 28px;" src="https://www.freepnglogos.com/uploads/twitter-logo-png/twitter-logo-vector-png-clipart-1.png" alt="">
+    </div>
+    <small style="color: var(--color); justify-content: center; display: flex; margin-top: 6px;">
+        Twitter
+    </small>
+</div>
+
+<div class="justify-content-center py-3 ssosta" style="border-radius: 8px; width: 120px;">
+    <div class="justify-content-center m-auto" style="width: 52px; height: 52px; padding: 12px; background-color: #f4f4f4; border-radius: 100px;">
+        <img style="width: 28px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/768px-Instagram_logo_2016.svg.png" alt="">
+    </div>
+    <small style="color: var(--color); justify-content: center; display: flex; margin-top: 6px;">
+        Instagram
+    </small>
+</div>
+
+<div class="justify-content-center py-3 ssosta" style="border-radius: 8px; width: 120px;">
+    <div class="justify-content-center m-auto" style="width: 52px; height: 52px; padding: 12px; background-color: #f4f4f4; border-radius: 100px;">
+        <svg  style="width: 28px;"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+          </svg>    
+    </div>
+    <small style="color: var(--color); justify-content: center; display: flex; margin-top: 6px;">
+        Pridať odkaz
+    </small>
+</div>
+
+</div>
+
+</div>
+
+
+
+<script>
+
+
+    var x = document.cookie.split(";");
+    for(var i=0;i <= x.length;i++) {
+        if (x.some((item) => item.includes("hide=true"))) {
+            document.getElementById("try").style.visibility = "hidden";
+        }
+    }
+        
+</script>
+<script>
+    
+    function hide(){
+
+  document.getElementById("try").style.visibility = "hidden";
+  document.cookie = "hide=true";    }
+
+
+</script>
+    
+    
+<!-- dark mode -->
+<script>
+
+    var tSwitcher=document.querySelectorAll("[class^=theme-switcher]");
+    let element=document.body,onpageLoad=localStorage.getItem("theme")||"";
+    if(null!=onpageLoad&&"bg-dark"==onpageLoad)
+      for(let e=0;e<tSwitcher.length;e++)tSwitcher[e].checked=!0;
+         function themeToggle(){event.target.checked?(localStorage.setItem("theme","bg-dark"),
+         tSwitcher.forEach(function(e){element.classList.add("bg-dark"),
+         e.checked=!0})):(localStorage.setItem("theme",""),
+         tSwitcher.forEach(function(e){element.classList.remove("bg-dark"),e.checked=!1}))}
+         
+         onpageLoad&&element.classList.add(onpageLoad);
+</script>
+
+
+</body>
+</html>

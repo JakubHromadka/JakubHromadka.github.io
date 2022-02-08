@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jakub Hromádka</title>
+  <link rel="stylesheet" href="css/mystyle.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet"> -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body class="s-wip">
+  <header class="s-nav">
+  <nav>
+    <ul>      
+      <li onclick="x()"><a href="#sioch"><span>stručné informácie osobného charakteru</span></a></li>
+      <li onclick="y()"><a href="#ipch"><span>informácie profesionálneho charakteru </span></a></li>
+      <li onclick="z()"><a href="#okaf"><span>obľúbená kapela a film</span></a></li>
+    </ul>
+  </nav>
+
+
+</header>
+
+  <div class="c-wip__header">
+    <h1>Jakub Hromádka</h1>
+    <h3>Moje osobné portfólio.</h3>
+</div>
+
+
+  <a class="subpage" href="/browser" target="_blank">BROWSER</a>
+  <a class="subpage2" href="html/subpage.html" target="_blank">SUBPAGE</a>
+  <a class="subpage3" href="/browser" target="_blank">BROWSER</a>
+  
+    
+
+
+
+    <dl class="items">
+        <dt class="active" id="sioch">stručné informácie osobného charakteru</dt>
+        <dd class="first-dd">
+          Moje meno je Jakub Hromádka. 
+          Pochádzam z Liptovského Mikuláša. 
+          Vo voľnom čase sa venujem záhradke, koňom a štrikovaniu.
+          Občas aj niečo naprogramujem.
+          Taktiež rád športujem.
+        </dd>
+        <dt id="ipch">informácie profesionálneho charakteru </dt>
+        <dd class="second-dd">
+          Chodím do <em>2.A</em> na <a href="https://ssosta.edupage.org" target="_blank"> Súkromnej strednej odbornej škole Tatranská akadémia</a>. Tento web som vytvoril na predmet <em>odborná prax</em>. 
+          
+          Na SSOSTe ma bavia skoro všetky predmety, ale najviac ma baví ODP a PIT.
+          Učím sa programovať v HTML, CSS, JavaScript, PHP, C a SQL.
+          Nedávno som si vytvoril <b><a href="https://jakubhromadka.000webhostapp.com/" target="_blank">vlastnú stránku</a></b>.
+          V škole som sa už naučil HTML, CSS, databázy, základy C a Python, pracovať v Photoshop a Illustrator a základy počítačových sietí.
+          Ešte by som sa chcel napríklad naučiť vytvárať aplikácie.
+        </dd>
+        <dt id="okaf">obľúbená kapela a film</dt>
+        <dd class="third-dd">
+          <table>
+            <tr>
+              <td>
+                <a href="https://sk.wikipedia.org/wiki/Pavol_Habera" target="_blank">
+                  <img src="img/band.jpg" alt="Habera">
+                </a>
+              </td>
+              <td>
+                <a href="https://www.imdb.com/title/tt7286456/" target="_blank">
+                  <img src="img/movie.jpg" alt="Joker">
+                </a>
+              </td>
+            </tr>
+          </table>
+        </dd>
+    </dl>
+
+    <footer>
+      Copiright 2022 by <strong>Jakub Hromádka</strong>. All rights reserved.
+  </footer>
+
+
+
+
+
+
+<!-- script -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.1.2/dist/lazyload.min.js"></script>
+<script src="https://www.seanhalpin.design/js/scripts.js"></script>
+
+
+<script>
+  var list = $('.items');
+  list.find('dd').hide();
+  list.find('.first-dd').slideDown(500);
+  list.find('dt').on('click', function(event) {
+      $(this).next().slideToggle(500)
+          .siblings('dd').slideUp();
+      $(this).toggleClass('active').siblings('dt').removeClass('active')
+  });
+  // var x = document.querySelector('#sioch');
+  // x.
+
+  function x(event){
+    var list = $('.items');
+    list.find('.first-dd').slideDown(500);
+    list.find('.second-dd').slideUp(500);
+    list.find('.third-dd').slideUp(500);
+    list.find('#sioch').addClass('active').siblings('dt').removeClass('active')
+
+
+
+  }
+  function y(event){
+    var list = $('.items');
+    list.find('.second-dd').slideDown(500);
+    list.find('.third-dd').slideUp(500);
+    list.find('.first-dd').slideUp(500);
+    list.find('#ipch').addClass('active').siblings('dt').removeClass('active')
+
+
+  }
+  function z(event){
+    var list = $('.items');
+    list.find('.third-dd').slideDown(500);
+    list.find('.second-dd').slideUp(500);
+    list.find('.first-dd').slideUp(500);
+    list.find('#okaf').addClass('active').siblings('dt').removeClass('active')
+
+
+
+  }
+</script> 
+
+
+<script>
+  var main = document.querySelector(".main");
+  var list = $('.container');
+
+  list.find('.more').hide();
+
+  list.find('.read-more').on('click', function(event) {
+      list.find('.more').slideToggle(500);
+
+      list.find('.read-more').toggleClass('active');
+      main.classList.toggle('active');
+
+      setTimeout(() => {
+          window.scroll({
+              top: 600,
+              behavior: 'smooth'
+          });
+      }, 500);
+
+      event.preventDefault();
+  });
+  list.find('.read-less').on('click', function(event) {
+      list.find('.more').slideUp(500);
+
+      setTimeout(() => {
+          main.classList.toggle('active');
+          list.find('.read-more').toggleClass('active');
+      }, 500);
+
+      event.preventDefault();
+  });
+</script>
+
+
+</body>
+</html>
