@@ -361,7 +361,8 @@ body {
 
 .topnav .icon {
   display: none;
-  font-size: 30px;
+  font-size: 32px;
+  margin-right: 10px;
 }
 
 @media screen and (max-width: 600px) {
