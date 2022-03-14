@@ -1,0 +1,153 @@
+.my-container {
+  width: 100vw;
+  height: 460px;
+  position: relative;
+  background-color: #ddd;
+  overflow: hidden;
+}
+.my-container .image-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* background: #f4f4f4; */
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  width: 460px;
+  height: 460px;
+  border-radius: 1000px;
+  /* border-bottom: 10px solid #444; */
+  animation: showIn 0.6s;
+  animation-iteration-count: 1;
+  -webkit-transform: translate(-50%, -50%) scale(1, 1);
+}
+@keyframes showIn {
+  from {
+    -webkit-transform: translate(-50%, -50%) scale(0.3, 0.3);
+  }
+  to {
+    -webkit-transform: translate(-50%, -50%) scale(1, 1);
+  }
+}
+
+.my-container img {
+  position: absolute;
+  top: 0;
+  left: -50%;
+  -webkit-transform: translate(-50%, -50%);
+  width: 200%;
+  -webkit-transform: rotate(-30deg);
+  z-index: 999;
+  transition: all ease-in-out 0.3s;
+}
+
+.my-container .image-container .shadow-shoes {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  width: 120px;
+  height: 120px;
+  border-radius: 1000px;
+  padding: 10px;
+  z-index: 998;
+  box-shadow: 10px 0px 146px 17px rgba(0, 0, 0, 0.75);
+}
+
+.my-container .image-container:hover {
+  cursor: pointer;
+}
+.my-container .image-container:hover img {
+  animation: floating 2s infinite;
+  -webkit-transform: rotate(0deg);
+  transition: all ease-in-out 0.3s;
+}
+@keyframes floating {
+  0% {
+    top: 10%;
+  }
+  50% {
+    top: 5%;
+  }
+  100% {
+    top: 10%;
+  }
+}
+
+.button-next-prev {
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+  cursor: pointer;
+  text-decoration: none;
+  color: #111;
+}
+.button-next-prev::before {
+  content: " ";
+  top: -3%;
+  position: absolute;
+  background: black;
+  padding: 1px;
+  transition: all 0.3s;
+  width: 0%;
+}
+.button-next-prev:hover::before {
+  top: 100%;
+  width: 100%;
+  transition: all 0.3s;
+}
+.next-btn {
+  font-family: arial;
+  font-weight: bold;
+  font-size: 50px;
+  right: 10%;
+  top: 50%;
+}
+.prev-btn {
+  font-family: arial;
+  font-weight: bold;
+  font-size: 50px;
+
+  top: 50%;
+  left: 10%;
+}
+
+.hide-slider {
+  -webkit-transform: scale(0.3, 0.3) !important;
+  display: none;
+  transition: all 0.3s;
+}
+
+.main {
+  font-family: Arial;
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+h3 {
+  background: #fff;
+  color: #3498db;
+  font-size: 36px;
+  line-height: 100px;
+  margin: 10px;
+  padding: 2%;
+  position: relative;
+  text-align: center;
+  height: 160px;
+}
+.action {
+  display: block;
+  margin: 100px auto;
+  width: 100%;
+  text-align: center;
+}
+.action a {
+  display: inline-block;
+  padding: 5px 10px;
+  background: #f30;
+  color: #fff;
+  text-decoration: none;
+}
+.action a:hover {
+  background: #000;
+}
