@@ -30,6 +30,7 @@ body {
   color: #1c1c1c;
   font-family: "Raleway", sans-serif !important;
   font-size: 5vw;
+  padding-top: 62px !important ;
 }
 
 dt {
@@ -54,6 +55,10 @@ body {
 .topnav {
   overflow: hidden;
   background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 }
 
 .topnav a {
