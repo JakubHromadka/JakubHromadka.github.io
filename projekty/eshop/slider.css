@@ -99,7 +99,6 @@
 
 .button-next-prev {
   position: absolute;
-  -webkit-transform: translate(-50%, -50%);
   cursor: pointer;
   text-decoration: none;
   color: #fff;
@@ -122,16 +121,15 @@
   font-family: arial;
   font-weight: bold;
   font-size: 50px;
-  right: 10%;
-  top: 50%;
+  right: 7%;
+  top: 45%;
 }
 .prev-btn {
   font-family: arial;
   font-weight: bold;
   font-size: 50px;
-
-  top: 50%;
-  left: 10%;
+  top: 45%;
+  left: 7%;
 }
 
 .hide-slider {
