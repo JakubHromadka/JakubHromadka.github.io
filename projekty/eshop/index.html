@@ -33,68 +33,69 @@
 </head>
 
 <body>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
 
-  <div class="topnav" id="myTopnav">
-    <a href="./">
-      <img class="logo" src="./img/koala-logo.png" alt="">
-    </a>
-    <a href="./kategorie/nike.html" class="link">Nike</a>
-    <a href="./kategorie/adidas.html" class="link">Adidas</a>
-    <a href="#about" class="link">About</a>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
+    <div class="topnav" id="myTopnav">
+      <a href="./">
+        <img class="logo" src="./img/koala-logo.png" alt="">
+      </a>
+      <a href="./kategorie/nike.html" class="link">Nike</a>
+      <a href="./kategorie/adidas.html" class="link">Adidas</a>
+      <a href="#about" class="link">About</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
 
-  <script>
-    function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
       }
-    }
-  </script>
+    </script>
+      <div style="padding-top: 62px !important"></div>
 
 
 
-  <div class="my-container">
-    <div class="image-container" id="slide3">
-      <div class="image-slider">
-        <div class="shadow-shoes"></div>
-        <img src="https://i.postimg.cc/kgwyTKsT/3.png">
+    <div class="my-container">
+      <div class="image-container" id="slide3">
+        <div class="image-slider">
+          <div class="shadow-shoes"></div>
+          <img src="https://i.postimg.cc/kgwyTKsT/3.png">
+        </div>
       </div>
+
+      <div class="image-container" id="slide2">
+        <div class="image-slider">
+          <div class="shadow-shoes"></div>
+          <img src="https://i.postimg.cc/ZqMxSm13/2.png">
+        </div>
+      </div>
+
+      <div class="image-container" id="slide1">
+        <div class="image-slider">
+          <div class="shadow-shoes"></div>
+          <img style="top: -4vw; left: -100px;" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/nike04b.png">
+        </div>
+      </div>
+      <a href="#" class="button-next-prev next-btn" id="next-btn">
+        <i class="fa-solid fa-angle-right"></i>
+      </a>
+      <a href="#" class="button-next-prev prev-btn" id="prev-btn">
+        <i class="fa-solid fa-angle-left"></i>
+      </a>
     </div>
 
-    <div class="image-container" id="slide2">
-      <div class="image-slider">
-        <div class="shadow-shoes"></div>
-        <img src="https://i.postimg.cc/ZqMxSm13/2.png">
-      </div>
-    </div>
-
-    <div class="image-container" id="slide1">
-      <div class="image-slider">
-        <div class="shadow-shoes"></div>
-        <img src="https://i.postimg.cc/9fMYK0NC/1.png">
-      </div>
-    </div>
-    <a href="#" class="button-next-prev next-btn" id="next-btn">
-      <i class="fa-solid fa-angle-right"></i>
-    </a>
-    <a href="#" class="button-next-prev prev-btn" id="prev-btn">
-      <i class="fa-solid fa-angle-left"></i>
-    </a>
-  </div>
 
 
-
-  <body translate="no">
     <div class="main">
-      <div class="slider slider-for">
+      <!-- <div class="slider slider-for">
         <div>
           <h3>Nike</h3>
         </div>
@@ -110,14 +111,14 @@
         <div>
           <h3>5</h3>
         </div>
-      </div>
+      </div> -->
       <div class="slider slider-nav">
         <a href="./kategorie/nike.html">
-        <div class="slider-item">
+          <div class="slider-item">
             <img style="width: 60%; margin: auto;" src="https://www.festisite.com/static/partylogo/img/logos/nike.png"
               alt="">
-            </div>
-          </a>
+          </div>
+        </a>
         <div class="slider-item">
           <a href="./kategorie/adidas.html">
             <img style="width: 75%; margin: auto; "
@@ -128,11 +129,13 @@
           <img style="width: 58%; margin: auto;" src="https://marka-logo.com/wp-content/uploads/2020/04/Puma-Logo.png"
             alt="">
         </div>
-        <div>
-          <h3>4</h3>
+        <div class="slider-item">
+          <img style="width: 58%; margin: auto;"
+            src="https://seeklogo.com/images/N/new-balance-logo-92A821DDB4-seeklogo.com.png" alt="">
         </div>
-        <div>
-          <h3>5</h3>
+        <div class="slider-item">
+          <img style="width: 58%; margin: auto;"
+            src="https://i.pinimg.com/originals/25/d2/f4/25d2f42c022b4801471b167bff68e1c0.png" alt="">
         </div>
       </div>
       <!-- <div class="action">
@@ -343,7 +346,7 @@
 
     </script>
 
-
-  </body>
+  </div>
+</body>
 
 </html>

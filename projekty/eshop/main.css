@@ -30,7 +30,7 @@ body {
   color: #1c1c1c;
   font-family: "Raleway", sans-serif !important;
   font-size: 5vw;
-  padding-top: 62px !important ;
+  /* padding-top: 62px !important ; */
 }
 
 dt {
@@ -103,7 +103,7 @@ body {
 
 @media screen and (max-width: 600px) {
   .topnav.responsive {
-    position: relative;
+    position: fixed;
   }
   .topnav.responsive .icon {
     position: absolute;
