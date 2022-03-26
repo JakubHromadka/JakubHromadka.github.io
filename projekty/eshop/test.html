@@ -1,128 +1,120 @@
-
-
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 
 <head>
-
   <meta charset="UTF-8">
-  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 
+  <style>
+    body {
+      font-family: Helvetica, sans-serif;
+      padding: 5%;
+      text-align: center;
+    }
 
-  <title>CodePen - slick slider go to slide example</title>
-  
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    #slideshow {
+      overflow: hidden;
+      height: 400px;
+      width: 100%;
+      margin: 0 auto;
+    }
 
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css'>
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css'>
-  
-<link rel="stylesheet" href="style.css">
-<style>
-body{
-  background:#ccc;
-}
-.main {
-  font-family:Arial;
-  width:500px;
-  display:block;
-  margin:0 auto;
-}
-h3 {
-    background: #fff;
-    color: #3498db;
-    font-size: 36px;
-    line-height: 100px;
-    margin: 10px;
-    padding: 2%;
-    position: relative;
-    text-align: center;
-}
-.action{
-  display:block;
-  margin:100px auto;
-  width:100%;
-  text-align:center;
-}
-.action a {
-  display:inline-block;
-  padding:5px 10px; 
-  background:#f30;
-  color:#fff;
-  text-decoration:none;
-}
-.action a:hover{
-  background:#000;
-}
-</style>
+    .slide-wrapper {
+      width: 2912px;
+      -webkit-animation: slide 18s ease infinite;
+    }
 
-  <script>
-  window.console = window.console || function(t) {};
-</script>
+    .slide {
+      float: left;
+      height: 510px;
+      width: 728px;
+    }
 
-  
-  
-  <script>
-  if (document.location.search.match(/type=embed/gi)) {
-    window.parent.postMessage("resize", "*");
-  }
-</script>
+    .slide:nth-child(1) {
+      background: #D93B65;
+    }
 
+    .slide:nth-child(2) {
+      background: #037E8C;
+    }
 
+    .slide:nth-child(3) {
+      background: #36BF66;
+    }
+
+    .slide:nth-child(4) {
+      background: #D9D055;
+    }
+
+    .slide-number {
+      color: #000;
+      text-align: center;
+      font-size: 10em;
+    }
+
+    @-webkit-keyframes slide {
+      20% {
+        margin-left: 0px;
+      }
+
+      30% {
+        margin-left: -728px;
+      }
+
+      50% {
+        margin-left: -728px;
+      }
+
+      60% {
+        margin-left: -1456px;
+      }
+
+      70% {
+        margin-left: -1456px;
+      }
+
+      80% {
+        margin-left: -2184px;
+      }
+
+      90% {
+        margin-left: -2184px;
+      }
+    }
+  </style>
 </head>
 
-<body translate="no" >
-  <div class="main">
-  <div class="slider slider-for">
-    <div><h3>1</h3></div>
-    <div><h3>2</h3></div>
-    <div><h3>3</h3></div>
-    <div><h3>4</h3></div>
-    <div><h3>5</h3></div>
+<body>
+
+  <div id="slideshow">
+    <div class="slide-wrapper">
+      <div class="slide">
+        <a href="./kategorie/nike.html">
+          <div class="slider-item">
+            <img style="width: 60%; margin: auto;" src="https://www.festisite.com/static/partylogo/img/logos/nike.png"
+              alt="">
+          </div>
+        </a>
+      </div>
+      <div class="slide">
+        <a href="./kategorie/adidas.html">
+          <img style="width: 75%; margin: auto; "
+            src="https://logos-world.net/wp-content/uploads/2020/04/Adidas-Symbol.png" alt="">
+        </a>      </div>
+      <div class="slide">
+        <img style="width: 58%; margin: auto;" src="https://marka-logo.com/wp-content/uploads/2020/04/Puma-Logo.png"
+        alt="">      </div>
+      <div class="slide">
+        <img style="width: 58%; margin: auto;"
+        src="https://seeklogo.com/images/N/new-balance-logo-92A821DDB4-seeklogo.com.png" alt="">      </div>
+      <div class="slide">
+        <img style="width: 58%; margin: auto;"
+        src="https://i.pinimg.com/originals/25/d2/f4/25d2f42c022b4801471b167bff68e1c0.png" alt="">      </div>
+    </div>
   </div>
-  <div class="slider slider-nav">
-    <div><h3>1</h3></div>
-    <div><h3>2</h3></div>
-    <div><h3>3</h3></div>
-    <div><h3>4</h3></div>
-    <div><h3>5</h3></div>
-  </div>
-  <div class="action">
-    <a href="#" data-slide="3">go to slide 3</a>
-    <a href="#" data-slide="4">go to slide 4</a>
-    <a href="#" data-slide="5">go to slide 5</a>
-  </div>
-</div>
-    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
-
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js'></script>
-      <script id="rendered-js" >
-$('.slider-for').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  arrows: false,
-  fade: true,
-  asNavFor: '.slider-nav' });
-
-$('.slider-nav').slick({
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  asNavFor: '.slider-for',
-  dots: true,
-  focusOnSelect: true });
-
-
-$('a[data-slide]').click(function (e) {
-  e.preventDefault();
-  var slideno = $(this).data('slide');
-  $('.slider-nav').slick('slickGoTo', slideno - 1);
-});
-//# sourceURL=pen.js
-    </script>
-
-  
 
 </body>
 
 </html>
- 
