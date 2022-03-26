@@ -288,7 +288,8 @@ h3 {
   /* display: flex; */
   /* margin: 8%; */
   /* padding: 10px; */
-  height: 320px;
+  height: 50vw;
+  max-height: 320px;
   width: auto;
   align-items: center;
   justify-content: center;
@@ -296,7 +297,7 @@ h3 {
   justify-self: center;
   display: block;
   /* display: flex; */
-  margin: 20px;
+  margin: 5%;
   /* margin-left: auto; */
   /* margin-right: auto; */
   /* align-items: ; */
