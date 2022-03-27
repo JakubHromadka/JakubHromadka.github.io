@@ -23,12 +23,13 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 }
 
+
 html {
   overflow-x: hidden;
 }
 
 body {
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   background: var(--green);
   /* background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAIElEQVQoU2NcWuD6v2nfFwZcgFFdz/I/TlkGBobhoQAAGHYPccmxFlIAAAAASUVORK5CYII=) repeat; */
   color: #1c1c1c;
