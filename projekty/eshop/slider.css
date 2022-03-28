@@ -144,7 +144,7 @@
   width: 100%;
   display: block;
   /* margin: 0 auto; */
-  margin: 100px 0;
+  /* margin: 100px 0; */
 }
 h3 {
   background: #fff;
@@ -213,10 +213,12 @@ h3 {
 
 #slideshow {
   overflow: hidden;
-  height: 16vw;
-  min-height: 150px;
+  /* height: 16vw; */
+  /* min-height: 150px; */
   width: 100%;
-  margin-top: 60px;
+  padding: 0;
+  /* margin-top: 60px; */
+  margin: 100px 0;
   /* margin: 0 auto; */
 }
 
@@ -322,10 +324,7 @@ h3 {
   }
   
 }
-@media (max-width: 600px) {
 
-  
-}
 
 .slider-text {
   font-size: 46px;
