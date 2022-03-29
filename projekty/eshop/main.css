@@ -23,13 +23,18 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 }
 
+/* @media screen and (max-width: 900px) {
+} */
 
-html {
-  overflow-x: hidden;
+@media (pointer:none), (pointer:coarse) {
+  html {
+    overflow-x: hidden;
+  }
 }
 
+
 body {
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
   background: var(--green);
   /* background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAIElEQVQoU2NcWuD6v2nfFwZcgFFdz/I/TlkGBobhoQAAGHYPccmxFlIAAAAASUVORK5CYII=) repeat; */
   color: #1c1c1c;
@@ -174,3 +179,56 @@ h4 {
   display: flex;
 } */
 
+
+button {
+  background-color: var(--coral);
+  color: #fff;
+  border: none;
+  /* display: flex; */
+  /* justify-self: end; */
+  /* height: 28px; */
+  /* margin: 16px; */
+  border-radius: 24px;
+  font-size: 19px;
+  padding: 8px 14px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.fav-item {
+  width: 33.333%;
+  /* margin: 0;
+  padding: 0; */
+  /* height: 500px; */
+}
+
+@media screen and (max-width: 900px) {
+  .fav-item {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .fav-item {
+    width: 100%;
+  }
+}
+
+.fav {
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  /* margin: 2%;  */
+  flex-wrap: wrap;
+  /* align-content: stretch; */
+}
+
+.fav-content {
+  background-color: #e2e2e2; 
+  margin: 10px; 
+  padding: 20px;
+  /* border-radius: 16px; */
+  /* width: 28%; */
+  /* max-width: 500px; */
+  border: #fff solid 8px;
+  align-self: stretch;
+}
